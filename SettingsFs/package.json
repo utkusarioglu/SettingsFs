@@ -1,0 +1,41 @@
+{
+  "name": "@utkusarioglu/settings-fs",
+  "version": "0.0.1",
+  "description": "A wrapper for Settings package that allows NodeJS fs access",
+  "main": "index.js",
+  "author": {
+    "name": "Utku Sarioglu",
+    "email": "utkusarioglu@gmail.com",
+    "url": "http://www.utkusarioglu.com"
+  },
+  "scripts": {
+    "clean": "shx rm -rf _bundles lib lib-esm index.d.ts package-lock.json",
+    "declaration": "dts-bundle --name @utkusarioglu/settings-fs --main lib/index.d.ts --out ../index.d.ts",
+    "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack && npm run declaration",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.21",
+    "@types/node": "^8.0.14",
+    "dts-bundle": "0.7.3",
+    "jest": "24.9.0",
+    "shx": "^0.3.2",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.2.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@utkusarioglu/settings": "git+https://github.com/utkusarioglu/Settings.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkusarioglu/settings-fs.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utkusarioglu/SettingsFs/issues"
+  },
+  "homepage": "https://github.com/utkusarioglu/SettingsFs#readme"
+}
