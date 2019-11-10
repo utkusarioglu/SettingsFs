@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/settings-fs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A wrapper for Settings package that allows NodeJS fs access",
   "main": "index.js",
   "author": {
@@ -24,10 +24,7 @@
     "ts-loader": "6.2.1",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
-  },
-  "dependencies": {
-    "@utkusarioglu/mixer": "git+https://github.com/utkusarioglu/Mixer.git",
+    "webpack-cli": "^3.3.10",
     "@utkusarioglu/settings": "git+https://github.com/utkusarioglu/Settings.git"
   },
   "repository": {

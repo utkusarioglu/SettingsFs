@@ -1,4 +1,5 @@
 import { M_SettingsFs } from "./m_settings_fs";
+import { M_Settings } from "@utkusarioglu/settings";
 
 test("fs_read", () => {
     const class_expression = class extends M_SettingsFs {

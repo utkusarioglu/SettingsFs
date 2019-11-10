@@ -14,10 +14,8 @@ declare module '@utkusarioglu/settings-fs/m_settings_fs' {
     import { t_filename, t_relativeDirectory } from "@utkusarioglu/settings/t_settings";
     export interface M_SettingsFs extends M_Settings {
     }
-    const M_SettingsFs_base: any;
-    export abstract class M_SettingsFs extends M_SettingsFs_base {
+    export abstract class M_SettingsFs {
         protected read_set_AllSettingsFromFile(config_file_relative_directory: t_relativeDirectory, config_filename: t_filename): this;
     }
-    export {};
 }
 

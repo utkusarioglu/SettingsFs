@@ -6,16 +6,11 @@
  * ///////////////////////////////////////////////////////////////////////// */
 
 /*
- *	NODE MODULES
+ *	DEPENDENCIES
  */
 // @ts-ignore
 const Fs = __non_webpack_require__("fs");
 //import * as Fs  from "fs"; 
-import { Parent } from "@utkusarioglu/mixer";
-
-/*
- *	MIXINS
- */
 import { M_Settings } from "@utkusarioglu/settings";
 
 /*
@@ -47,7 +42,7 @@ export interface M_SettingsFs extends M_Settings { }
  * @remarks
  * Service: Settings
  */
-export abstract class M_SettingsFs extends Parent().with(M_Settings) {
+export abstract class M_SettingsFs {
 
     /**
      * Reads, parses and sets the settings from the specified file and directory
