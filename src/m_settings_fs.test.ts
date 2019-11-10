@@ -28,3 +28,18 @@ test("fs_read", () => {
 
     expect(response).toBe("success");
 });
+
+
+test("set_settings", () => {
+    const class_expression = class extends M_SettingsFs {
+
+        constructor() {
+            super();
+            this.set_AllSettings({ yup: "yes" });
+        }
+
+    }
+
+    const class_instance = new class_expression();
+
+});

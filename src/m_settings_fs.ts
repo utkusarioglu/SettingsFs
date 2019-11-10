@@ -10,6 +10,7 @@
  */
 // @ts-ignore
 const Fs = __non_webpack_require__("fs");
+//import * as Fs  from "fs"; 
 
 /*
  *	MIXINS
@@ -35,8 +36,7 @@ import {
  *
  * ///////////////////////////////////////////////////////////////////////// */
 
-export interface M_SettingsFs extends
-    M_Settings { }
+export interface M_SettingsFs extends M_Settings { }
 
 /**
  * Provides storage access for reading settings
