@@ -46,7 +46,7 @@ export interface M_SettingsFs extends
  * @remarks
  * Service: Settings
  */
-export abstract class M_SettingsFs {
+export abstract class M_SettingsFs extends M_Settings {
 
     /**
      * Reads, parses and sets the settings from the specified file and directory
